@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eae2764-232b-4511-ac32-e2f66b5d8c32" name="Changes" comment="commit changes">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/adorable-chaton-avec-des-lunettes-de-soleil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/vue-du-beau-chat-domestique-persan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/burger poulet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/image accueil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Menu du jour.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/acceuil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/commandes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/connexion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/historique commandes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mon panier.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profil.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Miesta2004 &lt;marietousvt@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "reviewState": "AWAITING_REVIEW"
+    }
+  ],
+  "lastFilter": {
+    "state": "OPEN",
+    "reviewState": "AWAITING_REVIEW"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Miesta2004/Resto-facile.git",
+    "accountId": "69a25791-89dd-4118-9cc5-d610b426ea0d"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Miesta2004",
+    "repository": "Resto-facile"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="31BsuMCo55pxU6kWGVqBcghCgBY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.commandes.html.executor": "Run",
+    "JavaScript Debug.connexion.html.executor": "Run",
+    "JavaScript Debug.dashboard.html.executor": "Run",
+    "JavaScript Debug.dashboard_profil.html.executor": "Run",
+    "JavaScript Debug.etudiants.html.executor": "Run",
+    "JavaScript Debug.general.html.executor": "Run",
+    "JavaScript Debug.gestion_menu_allergenes.html.executor": "Run",
+    "JavaScript Debug.gestion_menu_categories.html.executor": "Run",
+    "JavaScript Debug.gestion_menu_plats.html.executor": "Run",
+    "JavaScript Debug.horaires.html.executor": "Run",
+    "JavaScript Debug.notifications.html.executor": "Run",
+    "JavaScript Debug.paiements.html.executor": "Run",
+    "JavaScript Debug.personnel.html.executor": "Run",
+    "JavaScript Debug.plat_creation.html.executor": "Run",
+    "JavaScript Debug.plat_update.html.executor": "Run",
+    "JavaScript Debug.plats.html.executor": "Run",
+    "JavaScript Debug.profil.html.executor": "Run",
+    "JavaScript Debug.promotions.html.executor": "Run",
+    "JavaScript Debug.role.html.executor": "Run",
+    "JavaScript Debug.statistiques.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "#1 on dev/marietou",
+    "last_opened_file_path": "/Users/marietoufall/IdeaProjects/Resto-facile/src/pages/Admin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/marietoufall/Library/Application Support/JetBrains/IntelliJIdea2025.1/node/versions/24.2.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Admin" />
+      <recent name="$PROJECT_DIR$/src/pages/Admin/Gestion des menus" />
+      <recent name="$PROJECT_DIR$/src/pages/Admin/Parametres" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Admin" />
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/src/pages/Admin/Gestion des menus" />
+      <recent name="$PROJECT_DIR$/src/pages/Client" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eae2764-232b-4511-ac32-e2f66b5d8c32" name="Changes" comment="" />
+      <created>1755009021774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755009021774</updated>
+      <workItem from="1755009023019" duration="6400000" />
+      <workItem from="1755036959470" duration="11700000" />
+      <workItem from="1755125697274" duration="1223000" />
+      <workItem from="1755127218646" duration="13456000" />
+    </task>
+    <task id="LOCAL-00001" summary="UPDATE COMMIT">
+      <option name="closed" value="true" />
+      <created>1755290470610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755290470611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev/marietou" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CODE_SMELLS_PROFILE" value="Project Default" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
+    <MESSAGE value="UPDATE COMMIT" />
+    <MESSAGE value="commit changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit changes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

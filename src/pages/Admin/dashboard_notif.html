@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>RestoFacile - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="flex h-screen bg-gray-50">
+    <div class="w-64 bg-white shadow-lg">
+        <div class="p-6 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-800" style="font-family: Pacifico, serif;">RestoFacile</h1>
+            <p class="text-sm text-gray-600 mt-1">Administration</p>
+        </div>
+        <nav class="mt-6">
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer bg-blue-50 text-blue-600 border-r-3 border-blue-600"
+               href="../Admin/dashboard.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-dashboard-line"></i>
+                </div>
+                Tableau de bord
+            </a>
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600"
+               href="../Admin/Gestion_des_menus/plats.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-restaurant-line"></i>
+                </div>
+                Gestion des menus
+            </a>
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600"
+               href="../Admin/commandes.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+                Commandes
+            </a>
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600"
+               href="../Admin/statistiques.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-bar-chart-line"></i>
+                </div>
+                Statistiques
+            </a>
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600"
+               href="../Admin/Utilisateurs/etudiants.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-user-line"></i>
+                </div>
+                Utilisateurs
+            </a>
+            <a class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600"
+               href="../Admin/Parametres/general.html">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-settings-line"></i>
+                </div>
+                Paramètres
+            </a>
+        </nav>
+    </div>
+    <div class="flex-1 flex flex-col">
+        <header class="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div><h2 class="text-2xl font-semibold text-gray-800">Administration</h2>
+                    <p class="text-sm text-gray-600">Gestion du restaurant scolaire</p></div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <a href="../Admin/dashboard.html" class="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors cursor-pointer">
+                            <div class="w-6 h-6 flex items-center justify-center"><i class="ri-notification-line"></i>
+                            </div>
+                        </a>
+                        <div class="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
+                            <div class="p-4 border-b border-gray-200"><h3 class="font-semibold text-gray-800">
+                                Notifications</h3></div>
+                            <div class="max-h-60 overflow-y-auto">
+                                <div class="p-4 hover:bg-gray-50 border-b border-gray-100"><p
+                                        class="text-sm text-gray-800">Nouvelle commande #1234</p>
+                                    <p class="text-xs text-gray-500 mt-1">Il y a 2 min</p></div>
+                                <div class="p-4 hover:bg-gray-50 border-b border-gray-100"><p
+                                        class="text-sm text-gray-800">Commande #1233 prête</p>
+                                    <p class="text-xs text-gray-500 mt-1">Il y a 5 min</p></div>
+                                <div class="p-4 hover:bg-gray-50 border-b border-gray-100"><p
+                                        class="text-sm text-gray-800">Stock faible: Pizza Margherita</p>
+                                    <p class="text-xs text-gray-500 mt-1">Il y a 10 min</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <a href="../Admin/dashboard_profil.html" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"><span
+                                    class="text-white text-sm font-medium">A</span></div>
+                            <span class="text-sm font-medium text-gray-700">Admin</span>
+                            <div class="w-4 h-4 flex items-center justify-center"><i
+                                    class="ri-arrow-down-s-line text-gray-500"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 overflow-y-auto p-6">
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div><p class="text-sm text-gray-600">Commandes du jour</p>
+                                <p class="text-2xl font-bold text-gray-800 mt-1">187</p>
+                                <p class="text-sm text-green-600 mt-1">+12%</p></div>
+                            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                                <div class="w-6 h-6 flex items-center justify-center"><i
+                                        class="ri-shopping-cart-line text-white text-xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div><p class="text-sm text-gray-600">Revenus du jour</p>
+                                <p class="text-2xl font-bold text-gray-800 mt-1">2,840€</p>
+                                <p class="text-sm text-green-600 mt-1">+8%</p></div>
+                            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                                <div class="w-6 h-6 flex items-center justify-center"><i
+                                        class="ri-money-euro-circle-line text-white text-xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div><p class="text-sm text-gray-600">Plats vendus</p>
+                                <p class="text-2xl font-bold text-gray-800 mt-1">324</p>
+                                <p class="text-sm text-green-600 mt-1">+15%</p></div>
+                            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
+                                <div class="w-6 h-6 flex items-center justify-center"><i
+                                        class="ri-restaurant-line text-white text-xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div><p class="text-sm text-gray-600">Utilisateurs actifs</p>
+                                <p class="text-2xl font-bold text-gray-800 mt-1">156</p>
+                                <p class="text-sm text-green-600 mt-1">+3%</p></div>
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                                <div class="w-6 h-6 flex items-center justify-center"><i
+                                        class="ri-user-line text-white text-xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-200"><h3
+                            class="text-lg font-semibold text-gray-800 mb-4">Évolution des commandes</h3>
+                        <div class="recharts-responsive-container" style="width: 100%; height: 300px; min-width: 0px;">
+                            <div class="recharts-wrapper" role="application"
+                                 style="position: relative; cursor: default; width: 100%; height: 100%; max-height: 300px; max-width: 698px;">
+                                <div class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
+                                     style="visibility: visible; pointer-events: none; position: absolute; top: 0px; left: 0px; transform: translate(75px, 162.5px); transition: transform 400ms;"
+                                     tabindex="-1"
+                                     xmlns="http://www.w3.org/1999/xhtml">
+                                    <div aria-live="assertive" class="recharts-default-tooltip" role="status"
+                                         style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;">
+                                        <p class="recharts-tooltip-label" style="margin: 0px;">08:00</p>
+                                        <ul class="recharts-tooltip-item-list" style="padding: 0px; margin: 0px;">
+                                            <li class="recharts-tooltip-item"
+                                                style="display: block; padding-top: 4px; padding-bottom: 4px; color: rgb(59, 130, 246);">
+                                                <span class="recharts-tooltip-item-name">commandes</span><span
+                                                    class="recharts-tooltip-item-separator"> : </span><span
+                                                    class="recharts-tooltip-item-value">12</span><span
+                                                    class="recharts-tooltip-item-unit"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <svg class="recharts-surface" height="300" role="application"
+                                     style="width: 100%; height: 100%;" tabindex="0"
+                                     viewBox="0 0 698 300" width="698"><title></title>
+                                    <desc></desc>
+                                    <defs>
+                                        <clipPath id="recharts1-clip">
+                                            <rect height="260" width="628" x="65" y="5"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g class="recharts-cartesian-grid">
+                                        <g class="recharts-cartesian-grid-horizontal">
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="693" y="5" y1="265" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="693" y="5" y1="200" y2="200"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="693" y="5" y1="135" y2="135"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="693" y="5" y1="70" y2="70"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="693" y="5" y1="5" y2="5"></line>
+                                        </g>
+                                        <g class="recharts-cartesian-grid-vertical">
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="65" x2="65" y="5" y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="169.66666666666669" x2="169.66666666666669" y="5"
+                                                  y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="274.33333333333337" x2="274.33333333333337" y="5"
+                                                  y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="379" x2="379" y="5" y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="483.6666666666667" x2="483.6666666666667" y="5"
+                                                  y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="588.3333333333334" x2="588.3333333333334" y="5"
+                                                  y1="5" y2="265"></line>
+                                            <line fill="none" height="260" stroke="#ccc" stroke-dasharray="3 3"
+                                                  width="628"
+                                                  x="65" x1="693" x2="693" y="5" y1="5" y2="265"></line>
+                                        </g>
+                                    </g>
+                                    <g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis">
+                                        <line class="recharts-cartesian-axis-line" fill="none" height="30"
+                                              orientation="bottom" stroke="#666"
+                                              width="628" x="65" x1="65" x2="693"
+                                              y="265" y1="265" y2="265"></line>
+                                        <g class="recharts-cartesian-axis-ticks">
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="65" x2="65" y="265" y1="271" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom" stroke="none"
+                                                      text-anchor="middle" width="628"
+                                                      x="65" y="273">
+                                                    <tspan dy="0.71em" x="65">08:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="169.66666666666669" x2="169.66666666666669" y="265"
+                                                      y1="271" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom"
+                                                      stroke="none" text-anchor="middle"
+                                                      width="628"
+                                                      x="169.66666666666669" y="273">
+                                                    <tspan dy="0.71em" x="169.66666666666669">09:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="274.33333333333337" x2="274.33333333333337" y="265"
+                                                      y1="271" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom"
+                                                      stroke="none" text-anchor="middle"
+                                                      width="628"
+                                                      x="274.33333333333337" y="273">
+                                                    <tspan dy="0.71em" x="274.33333333333337">10:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="379" x2="379" y="265" y1="271" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom" stroke="none"
+                                                      text-anchor="middle" width="628"
+                                                      x="379" y="273">
+                                                    <tspan dy="0.71em" x="379">11:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="483.6666666666667" x2="483.6666666666667" y="265" y1="271"
+                                                      y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom"
+                                                      stroke="none" text-anchor="middle"
+                                                      width="628"
+                                                      x="483.6666666666667" y="273">
+                                                    <tspan dy="0.71em" x="483.6666666666667">12:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="588.3333333333334" x2="588.3333333333334" y="265" y1="271"
+                                                      y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom"
+                                                      stroke="none" text-anchor="middle"
+                                                      width="628"
+                                                      x="588.3333333333334" y="273">
+                                                    <tspan dy="0.71em" x="588.3333333333334">13:00</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="30"
+                                                      orientation="bottom" stroke="#666"
+                                                      width="628" x="65"
+                                                      x1="693" x2="693" y="265" y1="271" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="30" orientation="bottom"
+                                                      stroke="none" text-anchor="middle"
+                                                      width="628"
+                                                      x="677.46875" y="273">
+                                                    <tspan dy="0.71em" x="677.46875">14:00</tspan>
+                                                </text>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis">
+                                        <line class="recharts-cartesian-axis-line" fill="none" height="260"
+                                              orientation="left" stroke="#666"
+                                              width="60" x="5" x1="65" x2="65"
+                                              y="5" y1="5" y2="265"></line>
+                                        <g class="recharts-cartesian-axis-ticks">
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="260"
+                                                      orientation="left" stroke="#666"
+                                                      width="60" x="5"
+                                                      x1="59" x2="65" y="5" y1="265" y2="265"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="260" orientation="left" stroke="none"
+                                                      text-anchor="end" width="60"
+                                                      x="57" y="265">
+                                                    <tspan dy="0.355em" x="57">0</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="260"
+                                                      orientation="left" stroke="#666"
+                                                      width="60" x="5"
+                                                      x1="59" x2="65" y="5" y1="200" y2="200"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="260" orientation="left" stroke="none"
+                                                      text-anchor="end" width="60"
+                                                      x="57" y="200">
+                                                    <tspan dy="0.355em" x="57">20</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="260"
+                                                      orientation="left" stroke="#666"
+                                                      width="60" x="5"
+                                                      x1="59" x2="65" y="5" y1="135" y2="135"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="260" orientation="left" stroke="none"
+                                                      text-anchor="end" width="60"
+                                                      x="57" y="135">
+                                                    <tspan dy="0.355em" x="57">40</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="260"
+                                                      orientation="left" stroke="#666"
+                                                      width="60" x="5"
+                                                      x1="59" x2="65" y="5" y1="70" y2="70"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="260" orientation="left" stroke="none"
+                                                      text-anchor="end" width="60"
+                                                      x="57" y="70">
+                                                    <tspan dy="0.355em" x="57">60</tspan>
+                                                </text>
+                                            </g>
+                                            <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                <line class="recharts-cartesian-axis-tick-line" fill="none" height="260"
+                                                      orientation="left" stroke="#666"
+                                                      width="60" x="5"
+                                                      x1="59" x2="65" y="5" y1="5" y2="5"></line>
+                                                <text class="recharts-text recharts-cartesian-axis-tick-value"
+                                                      fill="#666" height="260" orientation="left" stroke="none"
+                                                      text-anchor="end" width="60"
+                                                      x="57" y="12">
+                                                    <tspan dy="0.355em" x="57">80</tspan>
+                                                </text>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path class="recharts-curve recharts-tooltip-cursor" d="M65,5L65,265" height="260"
+                                          pointer-events="none"
+                                          stroke="#ccc" width="628"></path>
+                                    <g class="recharts-layer recharts-area">
+                                        <g class="recharts-layer">
+                                            <path class="recharts-curve recharts-area-area"
+                                                  d="M65,226C99.889,204.875,134.778,183.75,169.667,183.75C204.556,183.75,239.444,206.5,274.333,206.5C309.222,206.5,344.111,153.958,379,128.5C413.889,103.042,448.778,53.75,483.667,53.75C518.556,53.75,553.444,118.208,588.333,141.5C623.222,164.792,658.111,179.146,693,193.5L693,265C658.111,265,623.222,265,588.333,265C553.444,265,518.556,265,483.667,265C448.778,265,413.889,265,379,265C344.111,265,309.222,265,274.333,265C239.444,265,204.556,265,169.667,265C134.778,265,99.889,265,65,265Z"
+                                                  fill="#3B82F6" fill-opacity="0.1"
+                                                  height="260" stroke="none"
+                                                  width="628"></path>
+                                            <path class="recharts-curve recharts-area-curve"
+                                                  d="M65,226C99.889,204.875,134.778,183.75,169.667,183.75C204.556,183.75,239.444,206.5,274.333,206.5C309.222,206.5,344.111,153.958,379,128.5C413.889,103.042,448.778,53.75,483.667,53.75C518.556,53.75,553.444,118.208,588.333,141.5C623.222,164.792,658.111,179.146,693,193.5"
+                                                  fill="none" fill-opacity="0.1"
+                                                  height="260" stroke="#3B82F6"
+                                                  width="628"></path>
+                                        </g>
+                                    </g>
+                                    <g class="recharts-layer recharts-active-dot">
+                                        <circle class="recharts-dot" cx="65" cy="226" fill="#3B82F6" r="4" stroke="#fff"
+                                                stroke-width="2"></circle>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200"><h3
+                            class="text-lg font-semibold text-gray-800 mb-4">Plats populaires</h3>
+                        <div class="recharts-responsive-container" style="width: 100%; height: 300px; min-width: 0px;">
+                            <div class="recharts-wrapper" role="application"
+                                 style="position: relative; cursor: default; width: 100%; height: 100%; max-height: 300px; max-width: 312px;">
+                                <div class="recharts-tooltip-wrapper"
+                                     style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px;"
+                                     tabindex="-1"
+                                     xmlns="http://www.w3.org/1999/xhtml">
+                                    <div aria-live="assertive" class="recharts-default-tooltip" role="status"
+                                         style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;">
+                                        <p class="recharts-tooltip-label" style="margin: 0px;"></p></div>
+                                </div>
+                                <svg class="recharts-surface" cx="50%" cy="50%" height="300" role="application"
+                                     style="width: 100%; height: 100%;" tabindex="0" viewBox="0 0 312 300" width="312">
+                                    <title></title>
+                                    <desc></desc>
+                                    <defs>
+                                        <clipPath id="recharts3-clip">
+                                            <rect height="290" width="302" x="5" y="5"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g class="recharts-layer recharts-pie" tabindex="0">
+                                        <g class="recharts-layer">
+                                            <g class="recharts-layer recharts-pie-sector" tabindex="-1">
+                                                <path class="recharts-sector" color="#3B82F6" cx="156" cy="150"
+                                                      d="M 236,150
+        A 80,80,0,
+        0,0,
+        108.97717981660216,85.2786404500042
+      L 156,150 Z" data-recharts-item-data-key="value" data-recharts-item-index="0"
+                                                      fill="#3B82F6" name="Pizza Margherita"
+                                                      stroke="#fff" tabindex="-1"></path>
+                                            </g>
+                                            <g class="recharts-layer recharts-pie-sector" tabindex="-1">
+                                                <path class="recharts-sector" color="#10B981" cx="156" cy="150" d="M 108.97717981660216,85.2786404500042
+        A 80,80,0,
+        0,0,
+        101.23623152570491,208.31749019371293
+      L 156,150 Z"
+                                                      data-recharts-item-data-key="value" data-recharts-item-index="1"
+                                                      fill="#10B981"
+                                                      name="Salade César" stroke="#fff" tabindex="-1"></path>
+                                            </g>
+                                            <g class="recharts-layer recharts-pie-sector" tabindex="-1">
+                                                <path class="recharts-sector" color="#F59E0B" cx="156" cy="150"
+                                                      d="M 101.23623152570491,208.31749019371293
+        A 80,80,0,
+        0,0,
+        203.02282018339784,214.7213595499958
+      L 156,150 Z" data-recharts-item-data-key="value" data-recharts-item-index="2"
+                                                      fill="#F59E0B" name="Burger Classic"
+                                                      stroke="#fff" tabindex="-1"></path>
+                                            </g>
+                                            <g class="recharts-layer recharts-pie-sector" tabindex="-1">
+                                                <path class="recharts-sector" color="#EF4444" cx="156" cy="150"
+                                                      d="M 203.02282018339784,214.7213595499958
+        A 80,80,0,
+        0,0,
+        236,150.00000000000003
+      L 156,150 Z" data-recharts-item-data-key="value" data-recharts-item-index="3"
+                                                      fill="#EF4444" name="Pâtes Carbonara"
+                                                      stroke="#fff" tabindex="-1"></path>
+                                            </g>
+                                            <g class="recharts-layer recharts-pie-labels">
+                                                <g class="recharts-layer">
+                                                    <path class="recharts-curve recharts-pie-label-line" color="#3B82F6"
+                                                          cx="156" cy="150"
+                                                          d="M192.319,78.719L201.399,60.899" fill="none"
+                                                          name="Pizza Margherita"
+                                                          stroke="#3B82F6"></path>
+                                                    <text alignment-baseline="middle"
+                                                          class="recharts-text recharts-pie-label-text" color="#3B82F6"
+                                                          cx="156"
+                                                          cy="150" fill="#3B82F6"
+                                                          name="Pizza Margherita" stroke="none"
+                                                          text-anchor="start"
+                                                          x="201.39904997395467" y="60.89934758116323">
+                                                        <tspan dy="0em" x="201.39904997395467">Pizza Margherita: 35%
+                                                        </tspan>
+                                                    </text>
+                                                </g>
+                                                <g class="recharts-layer">
+                                                    <path class="recharts-curve recharts-pie-label-line" color="#10B981"
+                                                          cx="156" cy="150"
+                                                          d="M76.158,144.977L56.197,143.721" fill="none"
+                                                          name="Salade César"
+                                                          stroke="#10B981"></path>
+                                                    <text alignment-baseline="middle"
+                                                          class="recharts-text recharts-pie-label-text" color="#10B981"
+                                                          cx="156"
+                                                          cy="150" fill="#10B981"
+                                                          name="Salade César" stroke="none"
+                                                          text-anchor="end"
+                                                          x="56.19732715717285" y="143.72094804706867">
+                                                        <tspan dy="0em" x="56.19732715717285">Salade César: 28%</tspan>
+                                                    </text>
+                                                </g>
+                                                <g class="recharts-layer">
+                                                    <path class="recharts-curve recharts-pie-label-line" color="#F59E0B"
+                                                          cx="156" cy="150"
+                                                          d="M150.977,229.842L149.721,249.803" fill="none"
+                                                          name="Burger Classic"
+                                                          stroke="#F59E0B"></path>
+                                                    <text alignment-baseline="middle"
+                                                          class="recharts-text recharts-pie-label-text" color="#F59E0B"
+                                                          cx="156"
+                                                          cy="150" fill="#F59E0B"
+                                                          name="Burger Classic" stroke="none"
+                                                          text-anchor="end"
+                                                          x="149.7209480470686" y="249.80267284282715">
+                                                        <tspan dy="0em" x="149.7209480470686">Burger Classic: 22%
+                                                        </tspan>
+                                                    </text>
+                                                </g>
+                                                <g class="recharts-layer">
+                                                    <path class="recharts-curve recharts-pie-label-line" color="#EF4444"
+                                                          cx="156" cy="150"
+                                                          d="M227.281,186.319L245.101,195.399" fill="none"
+                                                          name="Pâtes Carbonara"
+                                                          stroke="#EF4444"></path>
+                                                    <text alignment-baseline="middle"
+                                                          class="recharts-text recharts-pie-label-text" color="#EF4444"
+                                                          cx="156"
+                                                          cy="150" fill="#EF4444"
+                                                          name="Pâtes Carbonara" stroke="none"
+                                                          text-anchor="start"
+                                                          x="245.10065241883677" y="195.3990499739547">
+                                                        <tspan dy="0em" x="245.10065241883677">Pâtes Carbonara: 15%
+                                                        </tspan>
+                                                    </text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                    <div class="p-6 border-b border-gray-200"><h3 class="text-lg font-semibold text-gray-800">Commandes
+                        récentes</h3></div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Commande
+                                </th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Étudiant
+                                </th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Articles
+                                </th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Total
+                                </th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Statut
+                                </th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Heure
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#2025-017</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">KHADIJATOU BA</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Pizza Margherita, Coca</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1000F</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800">En attente</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12:45</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#2025-016</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">BINTA CISSÉ</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Salade César, Eau</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1500F</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 py-1 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800">En préparation</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12:42</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#2025-015</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">DAOUBA KA</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Burger Classic, Frites</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2500F</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Retiré</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12:38</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#2025-014</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">DABA KA</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Pâtes</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3000F</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800">Prête</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12:23</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#2025-013</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">DABA KA</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Sandwitch Poulet</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1000F</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800">Prête</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">11:45</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
