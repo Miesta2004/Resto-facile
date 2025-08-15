@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RestoFacile - Gestion des Menu - Plats</title>
+</head>
+<body class="__variable_94dff8 __variable_a9f4e7 __variable_08a121 antialiased">
+    <div class="flex h-screen bg-gray-50">
+        <div class="w-64 bg-white shadow-lg">
+            <div class="p-6 border-b border-gray-200"><h1 class="text-2xl font-bold text-gray-800"
+                                                          style="font-family: Pacifico, serif;">RestoFacile</h1>
+                <p class="text-sm text-gray-600 mt-1">Administration</p></div>
+            <nav class="mt-6">
+                <a href="../../Admin/dashboard.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-dashboard-line"></i>
+                    </div>
+                    Tableau de bord
+                </a>
+                <a href="../../Admin/Gestion_des_menus/plats.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer bg-blue-50 text-blue-600 border-r-3 border-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-restaurant-line"></i>
+                    </div>
+                    Gestion des menus
+                </a>
+                <a href="../../Admin/commandes.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-shopping-cart-line"></i>
+                    </div>
+                    Commandes
+                </a>
+                <a href="../../Admin/statistiques.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-bar-chart-line"></i>
+                    </div>
+                    Statistiques
+                </a>
+                <a href="../../Admin/Utilisateurs/etudiants.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-user-line"></i>
+                    </div>
+                    Utilisateurs
+                </a>
+                <a href="../../Admin/Parametres/general.html" class="w-full flex items-center px-6 py-3 text-left hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer text-gray-700 hover:text-blue-600">
+                    <div class="w-5 h-5 flex items-center justify-center mr-3">
+                        <i class="ri-settings-line"></i>
+                    </div>
+                    Paramètres
+                </a>
+            </nav>
+        </div>
+        <div class="flex-1 flex flex-col">
+            <header class="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div><h2 class="text-2xl font-semibold text-gray-800">Administration</h2>
+                        <p class="text-sm text-gray-600">Gestion du restaurant scolaire</p></div>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <button class="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors cursor-pointer">
+                                <div class="w-6 h-6 flex items-center justify-center"><i class="ri-notification-line"></i>
+                                </div>
+                                <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">3</span>
+                            </button>
+                        </div>
+                        <div class="relative">
+                            <button class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"><span
+                                        class="text-white text-sm font-medium">A</span></div>
+                                <span class="text-sm font-medium text-gray-700">Admin</span>
+                                <div class="w-4 h-4 flex items-center justify-center"><i
+                                        class="ri-arrow-down-s-line text-gray-500"></i></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 overflow-y-auto p-6">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between"><h1 class="text-2xl font-bold text-gray-800">Gestion des
+                        menus</h1>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2 whitespace-nowrap cursor-pointer">
+                            <div class="w-4 h-4 flex items-center justify-center"><i class="ri-add-line"></i></div>
+                            <span>Ajouter un plat</span></button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <div class="border-b border-gray-200">
+                            <div class="flex space-x-8 px-6">
+                                <button class="py-4 px-1 border-b-2 font-medium text-sm transition-colors whitespace-nowrap cursor-pointer border-blue-500 text-blue-600">
+                                    Plats
+                                </button>
+                                <button class="py-4 px-1 border-b-2 font-medium text-sm transition-colors whitespace-nowrap cursor-pointer border-transparent text-gray-500 hover:text-gray-700">
+                                    Catégories
+                                </button>
+                                <button class="py-4 px-1 border-b-2 font-medium text-sm transition-colors whitespace-nowrap cursor-pointer border-transparent text-gray-500 hover:text-gray-700">
+                                    Allergènes
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-6">
+                                <div class="space-y-4">
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <div class="w-5 h-5 flex items-center justify-center text-gray-400"><i
+                                                    class="ri-search-line"></i></div>
+                                        </div>
+                                        <input class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                                               placeholder="Rechercher un plat..."
+                                               type="text" value=""></div>
+                                    <div class="flex flex-wrap gap-3 items-center">
+                                        <div class="relative">
+                                            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center space-x-2 text-sm whitespace-nowrap cursor-pointer bg-white text-gray-700">
+                                                <div class="w-4 h-4 flex items-center justify-center"><i
+                                                        class="ri-filter-line"></i></div>
+                                                <span>Catégorie</span>
+                                                <div class="w-4 h-4 flex items-center justify-center"><i
+                                                        class="ri-arrow-down-s-line"></i></div>
+                                            </button>
+                                        </div>
+                                        <div class="relative">
+                                            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center space-x-2 text-sm whitespace-nowrap cursor-pointer bg-white text-gray-700">
+                                                <div class="w-4 h-4 flex items-center justify-center"><i
+                                                        class="ri-alert-line"></i></div>
+                                                <span>Allergène</span>
+                                                <div class="w-4 h-4 flex items-center justify-center"><i
+                                                        class="ri-arrow-down-s-line"></i></div>
+                                            </button>
+                                        </div>
+                                        <div class="ml-auto text-sm text-gray-600">4 plats trouvés</div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                        <div class="relative"><img alt="Pizza Margherita"
+                                                                   class="w-full h-32 object-cover object-top rounded-lg"
+                                                                   src="https://readdy.ai/api/search-image?query=delicious%20margherita%20pizza%20with%20fresh%20mozzarella%2C%20tomato%20sauce%2C%20and%20basil%20leaves%20on%20a%20white%20plate%2C%20clean%20restaurant%20background%2C%20professional%20food%20photography%2C%20appetizing%20presentation&amp;width=300&amp;height=200&amp;seq=pizza1&amp;orientation=landscape">
+                                            <div class="absolute top-2 right-2">
+                                                <button class="px-2 py-1 rounded-full text-xs font-medium transition-colors cursor-pointer bg-green-100 text-green-800">
+                                                    Disponible
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 space-y-2">
+                                            <div class="flex items-center justify-between"><h3
+                                                    class="font-semibold text-gray-800">Pizza Margherita</h3><span
+                                                    class="text-lg font-bold text-blue-600">500f</span></div>
+                                            <p class="text-sm text-gray-600">Plat principal</p>
+                                            <p class="text-sm text-gray-600">Pizza traditionnelle avec mozzarella, sauce
+                                                tomate et basilic</p>
+                                            <div class="flex flex-wrap gap-1 mt-2"><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Gluten</span><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Lactose</span>
+                                            </div>
+                                            <div class="flex justify-end space-x-2 pt-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-edit-line"></i></div>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-delete-bin-line"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                        <div class="relative"><img alt="Salade César"
+                                                                   class="w-full h-32 object-cover object-top rounded-lg"
+                                                                   src="https://readdy.ai/api/search-image?query=fresh%20caesar%20salad%20with%20crisp%20romaine%20lettuce%2C%20parmesan%20cheese%2C%20croutons%2C%20and%20caesar%20dressing%20in%20a%20white%20bowl%2C%20clean%20restaurant%20background%2C%20professional%20food%20photography&amp;width=300&amp;height=200&amp;seq=salad1&amp;orientation=landscape">
+                                            <div class="absolute top-2 right-2">
+                                                <button class="px-2 py-1 rounded-full text-xs font-medium transition-colors cursor-pointer bg-green-100 text-green-800">
+                                                    Disponible
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 space-y-2">
+                                            <div class="flex items-center justify-between"><h3
+                                                    class="font-semibold text-gray-800">Salade César</h3><span
+                                                    class="text-lg font-bold text-blue-600">1000f</span></div>
+                                            <p class="text-sm text-gray-600">Entrée</p>
+                                            <p class="text-sm text-gray-600">Salade romaine, parmesan, croûtons et sauce
+                                                César</p>
+                                            <div class="flex flex-wrap gap-1 mt-2"><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Gluten</span><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Oeuf</span>
+                                            </div>
+                                            <div class="flex justify-end space-x-2 pt-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-edit-line"></i></div>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-delete-bin-line"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                        <div class="relative"><img alt="Burger Classic"
+                                                                   class="w-full h-32 object-cover object-top rounded-lg"
+                                                                   src="https://readdy.ai/api/search-image?query=classic%20beef%20burger%20with%20lettuce%2C%20tomato%2C%20cheese%2C%20and%20pickles%20on%20a%20sesame%20bun%2C%20served%20with%20fries%2C%20clean%20restaurant%20background%2C%20professional%20food%20photography&amp;width=300&amp;height=200&amp;seq=burger1&amp;orientation=landscape">
+                                            <div class="absolute top-2 right-2">
+                                                <button class="px-2 py-1 rounded-full text-xs font-medium transition-colors cursor-pointer bg-red-100 text-red-800">
+                                                    Indisponible
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 space-y-2">
+                                            <div class="flex items-center justify-between"><h3
+                                                    class="font-semibold text-gray-800">Burger Classic</h3><span
+                                                    class="text-lg font-bold text-blue-600">1500f</span></div>
+                                            <p class="text-sm text-gray-600">Plat principal</p>
+                                            <p class="text-sm text-gray-600">Burger de bœuf avec salade, tomate, fromage et
+                                                cornichons</p>
+                                            <div class="flex flex-wrap gap-1 mt-2"><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Gluten</span><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Lactose</span>
+                                            </div>
+                                            <div class="flex justify-end space-x-2 pt-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-edit-line"></i></div>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-delete-bin-line"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                        <div class="relative"><img alt="Tiramisu"
+                                                                   class="w-full h-32 object-cover object-top rounded-lg"
+                                                                   src="https://readdy.ai/api/search-image?query=elegant%20tiramisu%20dessert%20with%20cocoa%20powder%20dusting%2C%20coffee-soaked%20ladyfingers%2C%20and%20mascarpone%20cream%20in%20a%20glass%2C%20clean%20restaurant%20background%2C%20professional%20food%20photography&amp;width=300&amp;height=200&amp;seq=dessert1&amp;orientation=landscape">
+                                            <div class="absolute top-2 right-2">
+                                                <button class="px-2 py-1 rounded-full text-xs font-medium transition-colors cursor-pointer bg-green-100 text-green-800">
+                                                    Disponible
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 space-y-2">
+                                            <div class="flex items-center justify-between"><h3
+                                                    class="font-semibold text-gray-800">Tiramisu</h3><span
+                                                    class="text-lg font-bold text-blue-600">1000f</span></div>
+                                            <p class="text-sm text-gray-600">Dessert</p>
+                                            <p class="text-sm text-gray-600">Dessert italien au café et mascarpone</p>
+                                            <div class="flex flex-wrap gap-1 mt-2"><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Lactose</span><span
+                                                    class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Oeuf</span>
+                                            </div>
+                                            <div class="flex justify-end space-x-2 pt-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-edit-line"></i></div>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i
+                                                            class="ri-delete-bin-line"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <h3 class="font-semibold text-gray-800">Pizza Regina</h3>
+                                                <span class="text-lg font-bold text-blue-600">500f</span>
+                                            </div>
+                                            <p class="text-sm text-gray-600">Plat principal</p>
+                                            <p class="text-sm text-gray-600">Pizza avec jambon, champignons et mozzarella</p>
+                                            <div class="flex flex-wrap gap-1 mt-2">
+                                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Gluten</span>
+                                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Lactose</span>
+                                            </div>
+                                            <div class="flex justify-end space-x-2 pt-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i class="ri-edit-line"></i></div>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
+                                                    <div class="w-4 h-4 flex items-center justify-center"><i class="ri-delete-bin-line"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                        <div class="bg-white rounded-xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+                            <div class="flex items-center justify-between mb-6"><h2
+                                    class="text-xl font-semibold text-gray-800">Modifier le plat</h2>
+                                <a href="../Gestion_des_menus/plats.html" class="text-gray-500 hover:text-gray-700 cursor-pointer">
+                                    <div class="w-6 h-6 flex items-center justify-center"><i class="ri-close-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <form class="space-y-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div><label class="block text-sm font-medium text-gray-700 mb-2">Nom du
+                                        plat</label><input
+                                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="Ex: Pizza Margherita" type="text" value="Tiramisu"></div>
+                                    <div><label
+                                            class="block text-sm font-medium text-gray-700 mb-2">Catégorie</label><select
+                                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-8">
+                                        <option value="">Sélectionner une catégorie</option>
+                                        <option value="Entrée">Entrée</option>
+                                        <option value="Plat principal">Plat principal</option>
+                                        <option selected="" value="Dessert">Dessert</option>
+                                        <option value="Boisson">Boisson</option>
+                                    </select></div>
+                                </div>
+                                <div><label
+                                        class="block text-sm font-medium text-gray-700 mb-2">Description</label><textarea
+                                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Description du plat..."
+                                        rows="3">Dessert italien au café et mascarpone</textarea>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div><label class="block text-sm font-medium text-gray-700 mb-2">Prix (€)</label><input
+                                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="0.00"
+                                            step="0.01" type="number" value="4.5"></div>
+                                    <div><label class="block text-sm font-medium text-gray-700 mb-2">Image</label><input
+                                            accept="image/*"
+                                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                            type="file"></div>
+                                </div>
+                                <div><label class="block text-sm font-medium text-gray-700 mb-2">Allergènes</label>
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2"><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Gluten</span></label><label
+                                            class="flex items-center space-x-2"><input checked=""
+                                                                                       class="rounded border-gray-300" type="checkbox"><span
+                                            class="text-sm text-gray-700">Lactose</span></label><label
+                                            class="flex items-center space-x-2"><input checked=""
+                                                                                       class="rounded border-gray-300" type="checkbox"><span
+                                            class="text-sm text-gray-700">Oeuf</span></label><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Arachide</span></label><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Soja</span></label><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Fruit à coque</span></label><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Poisson</span></label><label
+                                            class="flex items-center space-x-2"><input class="rounded border-gray-300"
+                                                                                       type="checkbox"><span
+                                            class="text-sm text-gray-700">Crustacé</span></label></div>
+                                </div>
+                                <div class="flex items-center space-x-2"><input checked=""
+                                                                                class="rounded border-gray-300" type="checkbox"><label
+                                        class="text-sm text-gray-700">Disponible</label></div>
+                                <div class="flex justify-end space-x-3 pt-4">
+                                    <a href="../Gestion_des_menus/plats.html" class="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors whitespace-nowrap cursor-pointer"
+                                            type="button">
+                                        Annuler
+                                    </a>
+                                    <a href="../Gestion_des_menus/plats.html" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap cursor-pointer"
+                                            type="submit">
+                                        Modifier
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
